@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Surgical Tech CST Exam Prep</title>
+  <style>
+    /* ─── VARIÁVEL DE COR DO APP ─────────────────────────────────────────── */
+    :root {
+      --brand:        #005EBC;   /* ex: #4F8EF7 */
+      --brand-light:  #005EBC22; /* auto: mesmo tom, 13% opacidade */
+    }
+
+    /* ─── BASE ───────────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1c1c1e;
+      background: #f2f2f7;
+      padding: 0 0 80px;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────────────────────── */
+    header {
+      background: var(--brand);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header img.app-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.25);
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -.4px;
+    }
+
+    header p.subtitle {
+      font-size: 14px;
+      opacity: .85;
+      margin-top: 6px;
+    }
+
+    /* ─── CONTAINER ──────────────────────────────────────────────────────── */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* ─── EFFECTIVE DATE BADGE ───────────────────────────────────────────── */
+    .effective-badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin: 28px 0 8px;
+    }
+
+    /* ─── SECTIONS ───────────────────────────────────────────────────────── */
+    .section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 24px 20px;
+      margin-top: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1c1c1e;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section h2 .icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .section p { color: #3a3a3c; margin-bottom: 10px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    ul.data-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+
+    ul.data-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f2f2f7;
+      font-size: 15px;
+      color: #3a3a3c;
+    }
+
+    ul.data-list li:last-child { border-bottom: none; }
+
+    ul.data-list li .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    /* ─── THIRD-PARTY CHIPS ──────────────────────────────────────────────── */
+    .sdk-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .sdk-chip {
+      background: #f2f2f7;
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #1c1c1e;
+    }
+
+    .sdk-chip a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    /* ─── CONTACT CARD ───────────────────────────────────────────────────── */
+    .contact-card {
+      background: var(--brand-light);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-card .contact-icon { font-size: 28px; }
+
+    .contact-card p { margin: 0; font-size: 14px; color: #3a3a3c; }
+
+    .contact-card a {
+      color: var(--brand);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 12px;
+      color: #8e8e93;
+    }
+
+    footer a { color: var(--brand); text-decoration: none; }
+
+    /* ─── DARK MODE ──────────────────────────────────────────────────────── */
+    @media (prefers-color-scheme: dark) {
+      body { background: #1c1c1e; color: #f2f2f7; }
+      .section { background: #2c2c2e; box-shadow: none; }
+      .section h2 { color: #f2f2f7; }
+      .section p, ul.data-list li { color: #aeaeb2; }
+      ul.data-list li { border-color: #3a3a3c; }
+      .sdk-chip { background: #3a3a3c; color: #f2f2f7; }
+      footer { color: #636366; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── HEADER ────────────────────────────────────────────────────────── -->
+  <header>
+    <!-- Substitua pelo ícone real do app ou remova a tag img se não tiver -->
+    <img class="app-icon" src="https://hermesdigitalbr.github.io/surgicaltech-legal/icon.png" alt="Surgical Tech CST Exam Prep icon" onerror="this.style.display='none'" />
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Surgical Tech CST Exam Prep</p>
+  </header>
+
+  <div class="container">
+
+    <span class="effective-badge">Effective June 24, 2026</span>
+
+    <!-- ─── INTRO ──────────────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">👋</span> Overview</h2>
+      <p>
+        <strong>Surgical Tech CST Exam Prep</strong> ("we", "our", or "us") is developed by
+        <strong>Hermes Digital</strong>. This Privacy Policy explains how we collect,
+        use, and protect information when you use our app.
+      </p>
+      <p>
+        We are committed to protecting your privacy. We collect only the minimum
+        data necessary to provide the service. We do not sell your personal data
+        to third parties.
+      </p>
+    </div>
+
+    <!-- ─── DATA WE COLLECT ───────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">📦</span> Information We Collect</h2>
+      <p>Depending on how you use Surgical Tech CST Exam Prep, we may collect:</p>
+
+      <ul class="data-list">
+
+        <!-- SEMPRE PRESENTE -->
+        <li><span class="dot"></span>
+          <span><strong>Usage data</strong> — app screens visited, features used,
+          session duration. Used to improve the app experience.</span>
+        </li>
+
+        <li><span class="dot"></span>
+          <span><strong>Diagnostics & crash reports</strong> — error logs and
+          performance data. Used to fix bugs and improve stability.</span>
+        </li>
+
+        <li><span class="dot"></span>
+          <span><strong>Purchase history</strong> — records of in-app purchases and
+          subscriptions, processed by Apple. We do not store your payment details.</span>
+        </li>
+
+        <!-- CONDICIONAL: HAS_ACCOUNT = true -->
+        
+
+        <!-- CONDICIONAL: HAS_ADS = true -->
+        
+
+        <!-- CONDICIONAL: HAS_HEALTHKIT = true -->
+        
+
+        <!-- CONDICIONAL: HAS_CAMERA = true -->
+        
+
+        <!-- CONDICIONAL: HAS_LOCATION = true -->
+        
+
+        <!-- CONDICIONAL: HAS_NOTIFICATIONS = true -->
+        
+        <li><span class="dot"></span>
+          <span><strong>Notification token</strong> — a device token used to send
+          you push notifications. You can disable notifications at any time in
+          iOS Settings.</span>
+        </li>
+        
+
+        <!-- CONDICIONAL: COLLECTS_USER_CONTENT = true -->
+        
+
+      </ul>
+    </div>
+
+    <!-- ─── HOW WE USE DATA ───────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+      <ul class="data-list">
+        <li><span class="dot"></span>To provide and improve Surgical Tech CST Exam Prep's features</li>
+        <li><span class="dot"></span>To fix bugs, crashes, and performance issues</li>
+        <li><span class="dot"></span>To process subscription payments via Apple</li>
+        
+        <li><span class="dot"></span>To send you reminders and notifications you opt into</li>
+        
+        
+        <li><span class="dot"></span>To comply with legal obligations</li>
+      </ul>
+      <p style="margin-top:12px;">
+        We do <strong>not</strong> use your data for profiling, behavioral advertising,
+        or sell it to third parties.
+      </p>
+    </div>
+
+    <!-- ─── THIRD-PARTY SERVICES ──────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">🔗</span> Third-Party Services</h2>
+      <p>
+        Surgical Tech CST Exam Prep uses the following third-party services. Each has its own
+        privacy policy governing how they handle data:
+      </p>
+      <div class="sdk-grid">
+
+        <!-- SEMPRE PRESENTE -->
+        <div class="sdk-chip">
+          <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple StoreKit</a>
+        </div>
+
+        <!-- CONDICIONAL: HAS_ADS = true -->
+        
+
+        <!-- CONDICIONAL: HAS_NOTIFICATIONS = true -->
+        
+        <div class="sdk-chip">
+          <a href="https://onesignal.com/privacy_policy" target="_blank">OneSignal</a>
+        </div>
+        
+
+        <!-- CONDICIONAL: HAS_ANALYTICS = true -->
+        
+
+        <!-- CONDICIONAL: HAS_BACKEND = true (Supabase) -->
+        
+
+        <!-- CONDICIONAL: HAS_REVENUECAT = true -->
+        
+
+        <!-- SDKs adicionais específicos do app — adicionar manualmente -->
+        <!-- <div class="sdk-chip"><a href="URL" target="_blank">SDK Name</a></div> -->
+
+      </div>
+    </div>
+
+    <!-- ─── DATA RETENTION ────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">🗓️</span> Data Retention</h2>
+      <p>
+        We retain usage and diagnostic data for up to
+        <strong>365 days</strong>.
+        
+        Data associated with purchases is retained as required by applicable
+        financial and legal regulations.
+      </p>
+    </div>
+
+    <!-- ─── CHILDREN ──────────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      
+    </div>
+
+    <!-- ─── YOUR RIGHTS ───────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">⚖️</span> Your Rights</h2>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul class="data-list">
+        <li><span class="dot"></span>Access the personal data we hold about you</li>
+        <li><span class="dot"></span>Request correction of inaccurate data</li>
+        <li><span class="dot"></span>Request deletion of your data</li>
+        <li><span class="dot"></span>Withdraw consent at any time (where processing is based on consent)</li>
+        <li><span class="dot"></span>Lodge a complaint with a supervisory authority (EU/EEA users)</li>
+      </ul>
+      <p style="margin-top:12px;">
+        To exercise any of these rights, contact us at
+        <a href="mailto:support@hermesdigital.app" style="color:var(--brand)">support@hermesdigital.app</a>.
+        We will respond within 30 days.
+      </p>
+    </div>
+
+    <!-- ─── SECURITY ──────────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">🔒</span> Security</h2>
+      <p>
+        We implement industry-standard security measures to protect your
+        information. Data in transit is encrypted using TLS. However, no method
+        of transmission over the internet or electronic storage is 100% secure.
+      </p>
+    </div>
+
+    <!-- ─── CHANGES ───────────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">📝</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will
+        update the "Effective" date at the top of this page. For significant
+        changes, we will notify you through the app or via the email associated
+        with your account.
+      </p>
+      <p>
+        Continued use of Surgical Tech CST Exam Prep after changes are posted constitutes your
+        acceptance of the updated policy.
+      </p>
+    </div>
+
+    <!-- ─── CONTACT ───────────────────────────────────────────────────── -->
+    <div class="section">
+      <h2><span class="icon">✉️</span> Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy:</p>
+      <div class="contact-card">
+        <span class="contact-icon">💬</span>
+        <div>
+          <p><strong>Hermes Digital</strong></p>
+          <p><a href="mailto:support@hermesdigital.app">support@hermesdigital.app</a></p>
+          
+          <p><a href="https://hermesdigitalbr.github.io/surgicaltech-legal/support.html" target="_blank">https://hermesdigitalbr.github.io/surgicaltech-legal/support.html</a></p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+    <footer>
+      <p>© 2026 Hermes Digital · Surgical Tech CST Exam Prep</p>
+      <p style="margin-top:6px;">
+        <a href="https://hermesdigitalbr.github.io/surgicaltech-legal/terms.html">Terms of Use</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:support@hermesdigital.app">Contact</a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
